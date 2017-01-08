@@ -39,7 +39,7 @@ and open the template in the editor.
         <input type="checkbox" name="select[]" value="9" />9
         <input type="checkbox" name="select[]" value="10" />10
         </br>        </br>
-
+<input type="submit"name="sub" value="决定" onclick="select()"/>
        <!--<input type="submit"name="sub" value="决定" onclick="select()"/>
         <input type="button" name="checkAll" value="全选" onclick="checkAll()"/>
         <input type="button" name="all" value="反选" onclick=""  />
@@ -50,16 +50,16 @@ and open the template in the editor.
         
        
         <?php
-   //   function select(){
-   //        $values=$_POST['select'];
+      function select(){
+          $values=$_POST['select'];
       
-    //       foreach($values as $arr)
-    //        {
-    //             if ($arr%2==0)
-     //                 echo $arr." ";
-     //        }
-  //    select();
-  //      }
+           foreach($values as $arr)
+            {
+                 if ($arr%2==0)
+                      echo $arr." ";
+             }
+     select();
+       }
   //      function all(){
    //        $values=$_POST['select'];
        /// $arr=  count($values);
