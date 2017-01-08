@@ -3,34 +3,34 @@
 To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
+
+全选、取消选择、反选实现
 -->
 <html>
     <head>
         <meta charset="UTF-8">
         <title></title>
-        <script>
-        function btn1(){
-            
-           windows.location.href='rili.php';
-        }
-        
-        function btn2(){
-            
-            alert("btn2");
-        }
-        </script>
+        <style>
+            #btn input{
+                display: block;margin: 20px;    
+            }
+        </style>
+        <script src="resouce/select.js" type="text/javascript"></script>
     </head>
     <body>
-        <?php
-        
-
-    
-        ?>
-        <form action='button_test.php' method='get'>
-           
-            <input type='submit' value='按钮1' onclick='btn1()' name='btn'/>
-            <input type='button' value='按钮2' onclick='btn2()'name='btn' />
-            
-        </form>
+        <input type="button" value="select All" id="btn1" />
+        <input type="button" value="select Nothing" id="btn2" />
+        <input type="button" value="opposite Select" id="btn3" />
+  
+        <div id="btn">
+             <input type="checkbox" />
+             <input type="checkbox" />
+             <input type="checkbox" />
+             <input type="checkbox" />
+             <input type="checkbox" /> 
+             <input type="checkbox" />
+             <input type="checkbox" />
+             <input type="checkbox" /> 
+        </div>
     </body>
 </html>

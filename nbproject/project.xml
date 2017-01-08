@@ -3,7 +3,7 @@
     <type>org.netbeans.modules.php.project</type>
     <configuration>
         <data xmlns="http://www.netbeans.org/ns/php-project/1">
-            <name>各种测试存档运行文件</name>
+            <name>functional test</name>
         </data>
     </configuration>
 </project>
